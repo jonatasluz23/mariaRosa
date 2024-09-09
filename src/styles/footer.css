@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--color-primary-2);
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);;
+    font-weight: 500;
+}
+
+footer a {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: inherit;         /* Mantém a cor do texto ao invés da cor padrão do link */
+}
+
+footer a:hover {
+    color: inherit;         /* Garante que a cor não mude ao passar o mouse */
+}
+
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

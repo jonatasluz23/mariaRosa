@@ -1,0 +1,269 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+#praQuemNaoEh {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 50px; /* Ajuste: Maior espaçamento entre as seções */
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--color-primary-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-heart-broken {
+    position: absolute;
+    background-color: var(--color-primary-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-title {
+    text-align: center;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-4);
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dish-image {
+    width: 100%; 
+    /* height: auto;  */
+    max-width: 7rem; 
+}
+
+/* Estilo para as seções de conteúdo */
+/* .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 75%;
+    padding: 20px;
+    background-color: var(--color-primary-2);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    overflow: hidden;
+} */
+
+/* Estilos para a seção */
+#beneficios-vantagens {
+    background-color: var(--color-primary-1);
+    padding: 40px 8%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    color: var(--color-primary-4);
+    font-size: 2rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-description {
+    color: var(--color-primary-4);
+    font-size: 1.125rem;
+    margin-bottom: 32px;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.section-list li {
+    color: var(--color-neutral-1);
+    font-size: 1.125rem;
+    text-align: left;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-neutral-0);
+}
+
+.section-list li i {
+    color: var(--color-primary-4);
+    margin-right: 12px;
+    font-size: 1.25rem;
+}
+
+.section-list li:last-child {
+    border-bottom: none;
+}
+
+.section-list li:hover {
+    background-color: var(--color-primary-2);
+    border-radius: 8px;
+    padding-left: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+.caracteristicas-produto .section-description {
+    display: flex;
+    justify-content: center; /* Centraliza os cards ao centro */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px 0; /* Espaçamento vertical */
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards ao centro */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px 0; /* Espaçamento vertical */
+}
+
+.curso-card {
+    background-color: var(--color-neutral-0);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.curso-card h3 {
+    font-size: 1.4rem;
+    color: var(--color-primary-4);
+    margin-bottom: 12px;
+}
+
+.curso-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.curso-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--color-neutral-1);
+}
+
+.curso-list i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+
+.section-title {
+    color: var(--color-primary-4);
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: var(--color-neutral-1);
+    margin-bottom: 20px;
+}
+
+.section-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--color-neutral-1);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.section-list ul {
+    list-style-type: circle;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #praQuemNaoEh {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}
