@@ -256,6 +256,12 @@
     .dish {
         width: calc(50% - 12px);
     }
+
+    .cursos-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 600px) {

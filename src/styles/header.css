@@ -22,7 +22,7 @@ header {
 }
 
 #nav_logo img {
-    height: 50px; /* Limita o tamanho da imagem */
+    height: 5rem; /* Limita o tamanho da imagem */
     margin-right: 8px; /* Espaço entre a imagem e o texto */
 }
 
