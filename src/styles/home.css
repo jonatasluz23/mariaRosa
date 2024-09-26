@@ -52,27 +52,38 @@
 }
 
 #banner {
+    position: relative;
+    width: 100vw; /* O banner ocupará a largura total da viewport */
+    height: 50vh; /* A altura será 50% da altura da viewport */
     display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-    z-index: 2;
+    justify-content: space-between; /* Ajusta espaçamento entre conteúdo e vídeo */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 1;
+    padding: 0 5%; /* Adiciona espaçamento nas laterais */
+    overflow: hidden; /* Previne overflow */
 }
 
-#banner img {
-    height: 100%;
-    width: fit-content;
+/* Estilo para o vídeo */
+#video-banner {
+    width: 40%; /* Proporção da largura em relação ao banner */
+    max-width: 500px; /* Limite máximo de largura */
+    height: auto; /* Altura ajustada automaticamente conforme a largura */
+    border: 8px solid var(--color-primary-4); /* Moldura do vídeo */
+    border-radius: 20px; /* Bordas arredondadas para a moldura */
+    z-index: 2; /* Certifica-se de que o vídeo esteja acima da shape */
+    object-fit: cover; /* Garante que o vídeo preencha a área sem distorção */
 }
 
+/* Shape atrás do vídeo */
 .shape {
     background-color: var(--color-primary-2);
-    width: 50%;
-    height: 100%;
+    width: 50%; /* Ajuste para ser relativo ao banner */
+    height: 70%; /* Altura relativa ao banner */
     position: absolute;
-    border-radius: 40% 30% 0% 20%;
-    top: 0;
-    right: 0;
-    z-index: 1;
+    border-radius: 60% 40% 0% 30%;
+    top: 15%; /* Ajusta o posicionamento vertical */
+    right: 0; /* Ajusta o posicionamento horizontal */
+    z-index: 1; /* Certifica-se de que o shape esteja atrás do vídeo */
 }
 
 @media screen and (max-width: 1170px) {
