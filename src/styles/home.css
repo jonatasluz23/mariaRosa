@@ -1,5 +1,6 @@
 #home {
     display: flex;
+    flex-direction: column; /* Para dispositivos menores */
     min-height: calc(100vh - 91px);
     position: relative;
     padding: 0 8%; /* Adiciona um espaçamento nas laterais */
@@ -86,10 +87,143 @@
     z-index: 1; /* Certifica-se de que o shape esteja atrás do vídeo */
 }
 
+/* Estilos gerais para a seção de planos */
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--color-primary-1);
+    flex-wrap: wrap; /* Permite que os planos se ajustem em telas menores */
+}
+
+/* Estilos para os cards dos planos */
+.plano-card {
+    background-color: var(--color-primary-1);
+    border: 1px solid var(--color-primary-3);
+    border-radius: 12px;
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 1rem; /* Adiciona espaçamento entre os cards em telas menores */
+}
+
+/* Estilo para o plano em destaque */
+.plano-card.destaque {
+    background-color: var(--color-primary-3);
+    color: var(--color-primary-1);
+    border: 1px solid var(--color-primary-5);
+}
+
+.plano-card.destaque::before {
+    content: "Melhor Oferta";
+    background-color: var(--color-primary-5);
+    color: var(--color-primary-1);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+
+/* Títulos dos planos */
+.plano-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-4);
+}
+
+.plano-card.destaque h3 {
+    color: var(--color-primary-1);
+}
+
+/* Lista de benefícios */
+.plano-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.plano-card ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.plano-card ul li i {
+    color: var(--color-primary-5);
+    margin-right: 0.5rem;
+}
+
+/* Preço original e preço promocional */
+.preco-original {
+    text-decoration: line-through;
+    color: var(--color-primary-4);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.preco-promocional {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary-5);
+    margin-bottom: 1rem;
+}
+
+/* Descrição do preço e economia */
+.descricao-preco {
+    font-size: 0.9rem;
+    color: var(--color-primary-4);
+    margin-bottom: 1.5rem;
+}
+
+.descricao-preco span {
+    color: var(--color-primary-5);
+}
+
+/* Texto para ofertas limitadas */
+.oferta-limite {
+    font-size: 0.85rem;
+    color: var(--color-primary-5);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Botões de CTA (Call to Action) */
+.btn-assinar {
+    background-color: var(--color-primary-5);
+    color: var(--color-primary-1);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-assinar:hover {
+    background-color: var(--color-primary-4);
+}
+
+/* Botão em destaque */
+.destaque-btn {
+    background-color: var(--color-primary-4);
+}
+
+.destaque-btn:hover {
+    background-color: var(--color-primary-5);
+}
+
 @media screen and (max-width: 1170px) {
     #home {
         min-height: 100%;
         padding: 0 8%; /* Espaçamento nas laterais em telas menores */
+        flex-direction: column;
     }
 
     #banner,
@@ -103,9 +237,45 @@
         text-align: center;
         align-items: center;
     }
+
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cta .title {
+        font-size: 3rem;
+    }
+
+    #cta_buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .planos {
+        gap: 1rem;
+    }
+
+    .plano-card {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
+    #cta .title {
+        font-size: 2.5rem;
+    }
+
+    #cta .description {
+        font-size: 1rem;
+    }
+
+    #cta_buttons a {
+        font-size: 0.9rem;
+    }
+
     #phone_button button {
         display: none;
     }

@@ -172,6 +172,71 @@
     padding: 20px 0; /* Espaçamento vertical */
 }
 
+.section-title-caracteristica {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    color: #4A4A4A; /* Altera a cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-top: 20px; /* Adiciona um espaço no topo */
+    margin-bottom: 20px; /* Adiciona um espaço abaixo */
+    padding: 10px; /* Adiciona espaçamento interno */
+    background-color: #f0f0f0; /* Adiciona um fundo claro para destaque */
+    border-radius: 8px; /* Arredonda as bordas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar */
+}
+
+
+.curso-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.curso-list li {
+    margin-bottom: 10px;
+}
+
+.collapsible {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 4px solid #ccc;
+}
+
+.content p {
+    margin: 0;
+}
+
+.collapsible:after {
+    content: '\002B'; /* "+" símbolo */
+    font-size: 12px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212"; /* "-" símbolo */
+}
+
+
+
 .cursos-container {
     display: flex;
     justify-content: center; /* Centraliza os cards ao centro */
@@ -197,22 +262,6 @@
     font-size: 1.4rem;
     color: var(--color-primary-4);
     margin-bottom: 12px;
-}
-
-.curso-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.curso-list li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    color: var(--color-neutral-1);
-}
-
-.curso-list i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
 }
 
 
