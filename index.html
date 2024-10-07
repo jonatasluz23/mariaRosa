@@ -310,31 +310,49 @@
 
 
             <section class="caracteristicas-produto">
-                <h2 class="section-title">Características do produto</h2>
-
+                <h2 class="section-title-caracteristica">Características do produto</h2>
+            
                 <div class="cursos-container">
                     <div class="curso-card">
                         <h3>Curso 1: Bioquímica das Estruturas</h3>
                         <ul class="curso-list">
-                            <li><i class="fa-solid fa-check"></i> Estrutura de carboidratos (monossacarídeos...)</li>
-                            <li><i class="fa-solid fa-check"></i> Estrutura de lipídeos (ácidos graxos...)</li>
-                            <li><i class="fa-solid fa-check"></i> Estrutura de proteínas...</li>
-                            <li><i class="fa-solid fa-check"></i> Estruturas e funções de vitaminas</li>
-                            <li><i class="fa-solid fa-check"></i> Estruturas e funções de minerais</li>
-                            <li><i class="fa-solid fa-check"></i> BÔNUS: Módulos extras de enzimas e fibras</li>
+                            <li>
+                                <button class="collapsible"><i class="fa-solid fa-check"></i> Estrutura de carboidratos (monossacarídeos...)</button>
+                                <div class="content">
+                                    <p>Detalhes sobre a estrutura de carboidratos...</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fa-solid fa-check"></i> Estrutura de lipídeos (ácidos graxos...)</button>
+                                <div class="content">
+                                    <p>Detalhes sobre a estrutura de lipídeos...</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="collapsible"><i class="fa-solid fa-check"></i> Estrutura de proteínas...</button>
+                                <div class="content">
+                                    <p>Detalhes sobre a estrutura de proteínas...</p>
+                                </div>
+                            </li>
+                            <!-- Adicione mais colapsáveis conforme necessário -->
                         </ul>
                     </div>
-
-
+            
                     <div class="curso-card">
                         <h3>Curso 2: Bioquímica do Metabolismo</h3>
                         <ul class="curso-list">
-                            <li><i class="fa-solid fa-check"></i>Digestão de proteínas...</li>
+                            <li>
+                                <button class="collapsible"><i class="fa-solid fa-check"></i> Digestão de proteínas...</button>
+                                <div class="content">
+                                    <p>Detalhes sobre a digestão de proteínas...</p>
+                                </div>
+                            </li>
                             <!-- Outros módulos do Curso 2 -->
                         </ul>
                     </div>
                 </div>
             </section>
+            
 
 
 
@@ -398,6 +416,48 @@
                     </button>
                 </div>
             </section>
+            <section class="planos">
+                <div class="plano-card silver">
+                    <h3>Plano Silver</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Acesso ao Marketplace Exclusivo</li>
+                        <li><i class="fa-solid fa-check"></i> Descontos em Produtos</li>
+                        <li><i class="fa-solid fa-check"></i> Suporte Básico 24h</li>
+                    </ul>
+                    <p class="preco-original">de R$49,90/mês</p>
+                    <p class="preco-promocional">R$19,90/mês</p>
+                    <p class="descricao-preco">1 ano por apenas R$238,80 <br> <span>(economize R$372,00)</span></p>
+                    <button class="btn-assinar">ASSINAR</button>
+                </div>
+            
+                <div class="plano-card gold destaque">
+                    <h3>Plano Gold</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Acesso ao Marketplace Exclusivo</li>
+                        <li><i class="fa-solid fa-check"></i> Descontos Especiais</li>
+                        <li><i class="fa-solid fa-check"></i> Atendimento Premium 24h</li>
+                    </ul>
+                    <p class="preco-original">de R$89,90/mês</p>
+                    <p class="preco-promocional">R$24,90/mês</p>
+                    <p class="descricao-preco">1 ano por apenas R$298,80 <br> <span>(economize R$780,00)</span></p>
+                    <p class="oferta-limite">Só mais 1 dia com esse preço!</p>
+                    <button class="btn-assinar destaque-btn">ASSINAR</button>
+                </div>
+            
+                <div class="plano-card black">
+                    <h3>Plano Black</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Acesso Completo ao Marketplace</li>
+                        <li><i class="fa-solid fa-check"></i> Descontos Exclusivos VIP</li>
+                        <li><i class="fa-solid fa-check"></i> Atendimento Personalizado 24h</li>
+                    </ul>
+                    <p class="preco-original">de R$74,90/mês</p>
+                    <p class="preco-promocional">R$21,90/mês</p>
+                    <p class="descricao-preco">1 ano por apenas R$262,80 <br> <span>(economize R$636,00)</span></p>
+                    <button class="btn-assinar">ASSINAR</button>
+                </div>
+            </section>
+            
         </main>
 
         <footer>
